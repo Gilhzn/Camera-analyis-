@@ -1,0 +1,10 @@
+# Godot 4 editor cache and imported assets
+.godot/
+.import/
+export.cfg
+build/
+*.tmp
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
