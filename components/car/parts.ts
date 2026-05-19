@@ -23,7 +23,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪18,400",
     warranty: "3 שנים / 100,000 ק\"מ",
     section: 1,
-    explode: [0, 3.4, 0.1],
+    explode: [0, 4.5, 0.5],
   },
   {
     id: "wheel-fl",
@@ -35,7 +35,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪2,150",
     warranty: "2 שנים",
     section: 2,
-    explode: [2.5, -0.6, 2.6],
+    explode: [3.5, -1.8, 2.0],
   },
   {
     id: "wheel-fr",
@@ -47,7 +47,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪2,150",
     warranty: "2 שנים",
     section: 2,
-    explode: [-2.5, -0.6, 2.6],
+    explode: [-3.5, -1.8, 2.0],
   },
   {
     id: "wheel-rl",
@@ -58,7 +58,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪2,150",
     warranty: "2 שנים",
     section: 2,
-    explode: [2.5, -0.6, -2.6],
+    explode: [3.5, -1.8, -2.0],
   },
   {
     id: "wheel-rr",
@@ -69,7 +69,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪2,150",
     warranty: "2 שנים",
     section: 2,
-    explode: [-2.5, -0.6, -2.6],
+    explode: [-3.5, -1.8, -2.0],
   },
   {
     id: "hood",
@@ -81,7 +81,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪3,600",
     warranty: "5 שנים נגד חלודה",
     section: 3,
-    explode: [0, 2.2, 2.0],
+    explode: [0, 3.0, 2.5],
   },
   {
     id: "door-l",
@@ -93,7 +93,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪4,250",
     warranty: "3 שנים",
     section: 3,
-    explode: [2.2, 0.1, 0],
+    explode: [3.5, 0.4, 0],
   },
   {
     id: "door-r",
@@ -105,7 +105,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪4,250",
     warranty: "3 שנים",
     section: 3,
-    explode: [-2.2, 0.1, 0],
+    explode: [-3.5, 0.4, 0],
   },
   {
     id: "roof",
@@ -116,7 +116,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪5,800",
     warranty: "5 שנים נגד חלודה",
     section: 3,
-    explode: [0, 2.6, -0.3],
+    explode: [0, 3.6, -1.0],
   },
   {
     id: "headlight-l",
@@ -128,7 +128,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪1,980",
     warranty: "4 שנים",
     section: 4,
-    explode: [1.6, 0.4, 3.4],
+    explode: [2.0, 1.0, 4.5],
   },
   {
     id: "headlight-r",
@@ -140,7 +140,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪1,980",
     warranty: "4 שנים",
     section: 4,
-    explode: [-1.6, 0.4, 3.4],
+    explode: [-2.0, 1.0, 4.5],
   },
   {
     id: "mirror-l",
@@ -151,7 +151,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪690",
     warranty: "2 שנים",
     section: 4,
-    explode: [2.4, 1.2, 0.9],
+    explode: [3.6, 2.0, 1.4],
   },
   {
     id: "mirror-r",
@@ -162,7 +162,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪690",
     warranty: "2 שנים",
     section: 4,
-    explode: [-2.4, 1.2, 0.9],
+    explode: [-3.6, 2.0, 1.4],
   },
   {
     id: "exhaust",
@@ -174,7 +174,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪2,750",
     warranty: "3 שנים",
     section: 1,
-    explode: [-0.6, -0.6, -3.6],
+    explode: [-0.8, -1.0, -5.0],
   },
   {
     id: "battery",
@@ -186,7 +186,7 @@ export const CAR_PARTS: CarPart[] = [
     price: "₪890",
     warranty: "שנתיים מלאות",
     section: 1,
-    explode: [1.4, 1.8, 1.6],
+    explode: [2.4, 2.6, 2.4],
   },
 ]
 

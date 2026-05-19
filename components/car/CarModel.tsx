@@ -37,12 +37,7 @@ function Part({ part, progress, active, children }: PartProps) {
 }
 
 const bodyPaint = (
-  <meshStandardMaterial
-    color="#d72b1f"
-    metalness={0.55}
-    roughness={0.35}
-    envMapIntensity={1.1}
-  />
+  <meshStandardMaterial color="#d72b1f" metalness={0.45} roughness={0.42} />
 )
 
 const darkMetal = (
@@ -50,14 +45,12 @@ const darkMetal = (
 )
 
 const glass = (
-  <meshPhysicalMaterial
-    color="#0d1218"
-    metalness={0}
-    roughness={0.05}
-    transmission={0.65}
-    thickness={0.4}
+  <meshStandardMaterial
+    color="#0a1018"
+    metalness={0.4}
+    roughness={0.15}
     transparent
-    opacity={0.7}
+    opacity={0.55}
   />
 )
 
@@ -123,9 +116,10 @@ export default function CarModel({
 }: CarModelProps) {
   const root = useRef<THREE.Group>(null!)
 
-  useFrame((_, dt) => {
+  useFrame(() => {
     if (!root.current) return
-    const targetY = scroll * Math.PI * 0.6 + Math.PI * 0.18
+    // Gentle idle rotation only — the camera does the heavy lifting.
+    const targetY = scroll * 0.25
     root.current.rotation.y = lerp(root.current.rotation.y, targetY, 0.08)
     const float = Math.sin(performance.now() * 0.0008) * 0.04
     root.current.position.y = lerp(root.current.position.y, float, 0.1)
